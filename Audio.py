@@ -1,3 +1,7 @@
+# Need to add filter for filtering noise
+
+# Reccomendation :
+# DSP Filter
 import pyaudio
 import wave
 

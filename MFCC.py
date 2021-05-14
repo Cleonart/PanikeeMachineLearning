@@ -9,9 +9,13 @@ class MFCC():
     sampleRate = 8000
     numMFCC    = 16
 
-    def calcMFCC(self,path):
+    def calcMFCC(self,path=None):
         """ Calculate MFCC from given path """    
         
+        if path == None or path == "":
+            raise Exception("ERROR!: Please specify a path")
+            return
+
         # Load Wavefile
         signal, fs = librosa.load(path, sr = self.sampleRate)
 
