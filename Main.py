@@ -1,4 +1,3 @@
-
 from MFCC import MFCC
 import numpy as np
 import tensorflow as tf
@@ -6,7 +5,7 @@ from tensorflow import keras
 
 # Settings
 model_path = "wake_word.model"
-wav_path   = "Testdata/stop/0.wav"
+wav_path   = "Testdata/stop/5.wav"
 
 # Extract the features
 mf = MFCC()
@@ -25,4 +24,4 @@ sample = [finalReshape]
 # Predicting
 predictions = model.predict(sample)
 predictions = predictions[0][0]
-print(predictions)
+print("Prediction : ", predictions)

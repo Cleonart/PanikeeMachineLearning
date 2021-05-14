@@ -13,3 +13,7 @@
 ### Model
 - Detecting Wake Word
   wake_word.model
+
+### Next Step
+- Make data model with dataset 'tolong'
+- Filter the noise or train dataset with embedded noise
