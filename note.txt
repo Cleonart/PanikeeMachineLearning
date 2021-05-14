@@ -1,0 +1,20 @@
+# Catatan Machine Learning dan Model
+
+## Algoritma
+* MFCC (Mel Frequency Cepstrum Coefficients)
+  Cara Kerja Klasifikasi : 
+  - Audio sampel diambil sebanyak mungkin dengan durasi max 1 detik
+  - Audio dilakukan transformasi menggunakan MFCC
+  - Feature dari audio diambil dan diproses menjadi gambar
+  - Dengan menggunakan CNN, Neural Network akan melakukan train, validation dan tes menggunakan gambar
+
+Sampel training, validation dan testing berdurasi 1 detik
+samplerate = 8000
+
+## Troubleshooting
+Shape dari model train, val dan test adalah (16,16,1) yang merepresentasikan waktu rekaman 1 detik
+- Percobaan menggunakan wav recorder menghasilkan file WAV dengan durasi 0.93 detik.
+- durasi 0.93 detik membuat shape dari MFCC WAV menjadi (16,15,1)
+- sebaliknya durasi 1.1 detik membuat shape dari MFCC WAV menjadi (16,17,1)
+- Sampai pemrosesan 4 data, belum terdapat kendala
+- Akan tetapi noise sangat mempengaruhi proses testing dari model
