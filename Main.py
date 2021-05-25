@@ -5,7 +5,7 @@ from tensorflow import keras
 
 # Settings
 model_path = "wake_word.model"
-wav_path   = "Testdata/stop/5.wav"
+wav_path   = "Testdata/stop/11.wav"
 
 # Extract the features
 mf = MFCC()

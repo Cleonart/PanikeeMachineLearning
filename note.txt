@@ -18,3 +18,6 @@ Shape dari model train, val dan test adalah (16,16,1) yang merepresentasikan wak
 - sebaliknya durasi 1.1 detik membuat shape dari MFCC WAV menjadi (16,17,1)
 - Sampai pemrosesan 4 data, belum terdapat kendala
 - Akan tetapi noise sangat mempengaruhi proses testing dari model
+
+ToDo
+- Membuat filter untuk menghilangkan noise, Rekomendasi : DST
