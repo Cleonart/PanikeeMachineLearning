@@ -10,8 +10,8 @@ class MFCC():
     numMFCC    = 16
 
     def calcMFCC(self,path=None):
-        """ Calculate MFCC from given path """    
-        
+        """ Calculate MFCC from given path """
+
         if path == None or path == "":
             raise Exception("ERROR!: Please specify a path")
             return
@@ -39,7 +39,7 @@ class MFCC():
         # If path is None return error
         if path == None:
             raise Exception("ERROR! Path can't be None: Specify the path")
-            return 
+            return
 
         # Create the mfccs for the path
         mfccs = self.calcMFCC(path)
