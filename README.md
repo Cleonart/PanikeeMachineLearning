@@ -1,11 +1,11 @@
 # Panikee Machine Learning 
 ### Model Development
+For more information, please refer to `Brief Documentation for ML Model.pdf`.
 
 ### Big shoutout to
 - Google 
 - atomic14 https://github.com/atomic14
 - Digi-Key https://www.youtube.com/user/digikey
-
 
 ### Reference
 - https://github.com/ShawnHymel/tflite-speech-recognition
@@ -13,7 +13,4 @@
 
 ### Model
 - Detecting Wake Word
-  wake_word.model
-
-### Next Step
-- Filter the noise or train dataset with embedded noise
+  panikee_model.tflite in ModelV3/build directory
